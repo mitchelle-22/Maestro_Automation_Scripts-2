@@ -1,0 +1,31 @@
+appId: cert.com.safercity.safercitymobileapp
+---
+- assertVisible: Profile, tab, 5 of 5
+- tapOn: Profile, tab, 5 of 5
+
+- assertVisible: Logout 
+- tapOn: Logout 
+
+- assertVisible:
+    text: Bottom Sheet
+    index: 1
+
+
+- tapOn:
+    text: Bottom Sheet
+    index: 1
+
+- tapOn:
+    text: Bottom Sheet
+    index: 1
+
+# Wait for the logout confirmation modal to appear
+- extendedWaitUntil:
+    visible:
+      text: 'Are you sure you want to log out?'
+    timeout: 8000
+
+# Now safely tap the "Confirm" button on the modal
+- tapOn:
+    text: 'Confirm'
+

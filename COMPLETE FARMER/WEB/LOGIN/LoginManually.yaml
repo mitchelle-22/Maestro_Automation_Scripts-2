@@ -1,0 +1,27 @@
+url: https://qa--cf-grower.netlify.app/en/sign-in
+---
+- launchApp
+- longPressOn:
+    point: 55%,20%
+- assertVisible:
+    id: _r_0_-form-item
+    index: 1
+
+- tapOn:
+    id: _r_0_-form-item
+    index: 1
+- inputText: mitchelle@bridgelabs.design
+
+- assertVisible:
+    id: _r_1_-form-item
+    index: 1
+- tapOn:
+    id: _r_1_-form-item
+    index: 1
+- inputText: Michelle@12345#
+- assertVisible:
+    text: Sign In
+    index: 1
+- tapOn:
+    text: Sign In
+    index: 1

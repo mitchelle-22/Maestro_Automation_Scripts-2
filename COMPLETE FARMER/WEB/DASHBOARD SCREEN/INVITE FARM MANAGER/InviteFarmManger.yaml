@@ -1,0 +1,71 @@
+url: https://qa--cf-grower.netlify.app/en/sign-in
+---
+- launchApp
+- longPressOn:
+    point: 55%,20%
+- assertVisible:
+    id: _r_0_-form-item
+    index: 1
+
+- tapOn:
+    id: _r_0_-form-item
+    index: 1
+- inputText: mitchelle@bridgelabs.design
+
+- assertVisible:
+    id: _r_1_-form-item
+    index: 1
+- tapOn:
+    id: _r_1_-form-item
+    index: 1
+- inputText: Michelle@12345#
+- assertVisible:
+    text: Sign In
+    index: 1
+- tapOn:
+    text: Sign In
+    index: 1
+# FARM MANAGER
+
+- assertVisible: Farm Mgr
+- tapOn: Farm Mgr
+- assertVisible: Add farm manager
+- tapOn: Add farm manager
+- assertVisible: Invite farm manager
+- tapOn: Invite farm manager
+- assertVisible: Enter first name
+- tapOn: Enter first name
+- inputText: Hello World
+- assertVisible: Enter last name
+- tapOn: Enter last name
+- inputText: Hello World
+- assertVisible: Enter manager’s email address
+- tapOn: Enter manager’s email address
+- inputText: yitadak501@amirei.com
+
+# - assertVisible:
+#     id: _r_b_-form-item
+#     index: 1
+# - tapOn:
+#     id: _r_b_-form-item
+#     index: 1
+
+- assertVisible:
+    id: _r_7_-form-item
+    index: 1
+- tapOn:
+    id: _r_7_-form-item
+    index: 1
+
+- inputText: 567890876
+- scroll
+- assertVisible: 0
+- tapOn: 0
+- inputText: 11
+- assertVisible: Next
+- tapOn: Next
+
+- assertVisible: Full Time
+- tapOn: Full Time
+- assertVisible: Next
+- tapOn: Next

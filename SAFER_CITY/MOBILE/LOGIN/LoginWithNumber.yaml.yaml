@@ -1,0 +1,19 @@
+appId: cert.com.safercity.safercitymobileapp
+---
+- launchApp:
+    clearState: true
+
+- longPressOn: Login
+- assertVisible:  Phone Number
+- tapOn:  Phone Number
+- inputText: 7200661687
+- assertVisible:
+    id: passwordInput
+- tapOn: Password
+- inputText: Michelle@1234
+- assertVisible:
+    id: loginBtn
+- tapOn:
+    id: loginBtn
+
+

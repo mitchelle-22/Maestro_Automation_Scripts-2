@@ -1,0 +1,30 @@
+appId: cert.com.safercity.safercitymobileapp
+---
+- launchApp:
+    clearState: true
+- longPressOn: Sign Up
+- assertVisible: +27 Phone Number
+- tapOn: +27 Phone Number
+- inputText: 814567809
+- assertVisible:
+    id: signUpBtn
+- tapOn:
+    id: signUpBtn
+
+- tapOn:
+    id: signUpBtn
+
+# Verification Code (OTP)
+
+- extendedWaitUntil:
+    visible:
+      text: 'Verify'
+    timeout: 15000
+
+- tapOn:
+    point: 10%,53%
+
+- assertVisible:
+    id: verifyOTPBtn
+- tapOn:
+    id: verifyOTPBtn

@@ -1,0 +1,16 @@
+url: https://qa--cf-grower.netlify.app/en/sign-in
+---
+- launchApp
+- assertVisible: Continue with Google
+- tapOn: Continue with Google
+- assertVisible: Email or phone
+- tapOn: Email or phone
+- inputText: Mitchelle@bridgelabs.design
+
+- assertVisible: Next
+- tapOn: Next
+- assertVisible: Enter your password
+- tapOn: Enter your password
+- inputText: itchy_22
+- assertVisible: Next
+- tapOn: Next

@@ -1,0 +1,5 @@
+# url: https://staging--responder-company-portal.netlify.app/dashboard?userId=10024
+# ---
+- launchApp
+- assertVisible: Responders
+- tapOn: Responders

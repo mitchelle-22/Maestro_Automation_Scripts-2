@@ -1,0 +1,23 @@
+url: https://staging--responder-company-portal.netlify.app/login
+---
+- launchApp
+- assertVisible: Enter your email
+- tapOn: Enter your email
+- inputText: mitchelle@bridgelabs.design
+- assertVisible: Enter your password
+- tapOn: Enter your password
+- inputText: Michelle@1234
+- assertVisible: Login
+- tapOn: Login
+
+#Verification Page
+
+- extendedWaitUntil:
+    visible:
+      text: 'Continue'
+    timeout: 60000 # 60 seconds for OTP typing
+
+# - tapOn: Continue
+- tapOn:
+    point: 63%,45%
+- inputText: 215381

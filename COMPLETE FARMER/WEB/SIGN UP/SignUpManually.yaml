@@ -1,0 +1,53 @@
+appId: https://qa--cf-grower.netlify.app/en/sign-in
+---
+- launchApp:
+    clearState: true
+- assertVisible: Sign Up
+- tapOn: Sign Up
+
+- assertVisible: Enter your first name
+- tapOn: Enter your first name
+- inputText: Testing
+
+- assertVisible: Enter your last name
+- tapOn: Enter your last name
+- inputText: Hello World
+
+- assertVisible: Enter your email
+- tapOn: Enter your email
+- inputText: yitadak501@amirei.com
+
+- assertVisible:
+    id: _r_5_-form-item
+    index: 1
+- tapOn:
+    id: _r_5_-form-item
+    index: 1
+- inputText: 549870096
+- assertVisible: Continue
+- tapOn: Continue
+
+# PASSWORD PAGE
+
+- assertVisible: Enter your password
+- tapOn: Enter your password
+- inputText: HelloWorld@1
+- assertVisible:
+    text: Confirm password
+    index: 1
+- tapOn:
+    text: Confirm password
+    index: 1
+- inputText: HelloWorld@1
+
+- assertVisible: Next
+- tapOn: Next
+
+- longPressOn:
+    point: 55%,73%
+- tapOn:
+    point: 55%,73%
+
+- extendedWaitUntil:
+    visible: Next
+    timeout: 10000

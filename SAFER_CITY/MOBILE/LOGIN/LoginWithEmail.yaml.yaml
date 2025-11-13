@@ -1,0 +1,29 @@
+appId: cert.com.safercity.safercitymobileapp
+---
+- launchApp:
+    clearState: true
+
+- tapOn: http://localhost:8081
+- longPressOn: Login
+
+- assertVisible:  Email
+- tapOn:  Email
+- assertVisible: Email
+- tapOn: Email
+
+- inputText: mitchelle@bridgelabs.design
+- assertVisible: Password
+- tapOn: Password
+- inputText: Michelle@1234
+
+- assertVisible:
+    id: loginBtn
+- scrollUntilVisible:
+    element:
+      id: loginBtn
+
+- tapOn:
+    id: loginBtn
+
+- tapOn:
+    id: loginBtn
